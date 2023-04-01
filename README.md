@@ -2,7 +2,7 @@
 SDI Interview Test Code
 
 ### General Guidelines
-1.	All programming tests must be completed with Visual Studio and C#
+1.	All programming tests must be completed with any IDE and Rust
 2.	Entire solutions must be submitted for evaluation (email a zip file without executables). 
 3.	Comments must be included in the code to explain the applicant’s approach and/or assumptions.
 4.	Applicants are free to use the internet for research, but must complete the test on their own without help from any other person.
@@ -25,8 +25,8 @@ Note that only the first argument is mandatory. If the evaluator does not supply
 
 For example, if the evaluator uses the following command:
 
-```powershell
-Program1.exe –file “c:\medicalreports.txt” –sort PatientID 
+```sh
+cargo run -- –file “c:\medicalreports.txt” –sort PatientID 
 ```
 
 The program should print all the reports sorted by PatientID.

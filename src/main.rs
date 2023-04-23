@@ -17,13 +17,11 @@ fn main() {
 
     // Read File
     // let content = fs::read_to_string(file_value).expect("Expected to read the file");
-
-    // let a = read_file_lines(file_value);
     split_records(arguments.filename);
 }
 
 // https://doc.rust-lang.org/book/ch12-02-reading-a-file.html
-// cargo run -- -file ./src/data/medicalreports.txt -sort PatientID
+// cargo run -- --file ./src/data/medicalreports.txt --sort PatientID
 
 fn split_records(filename: String) {
     if let Ok(lines) = read_file_lines(filename) {
